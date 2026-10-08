@@ -1,0 +1,5 @@
+instancia,turmas,arestas,grau_medio,grau_maximo,densidade,maior_grupo,maior_professor,limite_inferior
+Exemplo ilustrativo,120,683,11.4,25,0.096,10,10,10
+Benchmark 60,60,349,11.6,21,0.197,9,7,9
+Benchmark 100,100,554,11.1,21,0.112,8,7,8
+Benchmark 140,140,866,12.4,23,0.089,9,7,9
