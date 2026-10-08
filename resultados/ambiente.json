@@ -1,6 +1,6 @@
 {
-  "inicio_execucao": "2026-10-08T17:20:14",
-  "fim_execucao": "2026-10-08T17:23:14",
+  "inicio_execucao": "2026-10-08T20:38:03",
+  "fim_execucao": "2026-10-08T20:41:04",
   "sistema": "Linux-5.15.167.4-microsoft-standard-WSL2-x86_64-with-glibc2.39",
   "python": "3.12.13",
   "numpy": "2.5.3",
