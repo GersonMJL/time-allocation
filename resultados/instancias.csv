@@ -1,5 +1,17 @@
-instancia,turmas,arestas,grau_medio,grau_maximo,densidade,maior_grupo,maior_professor,limite_inferior
-Exemplo ilustrativo,120,683,11.4,25,0.096,10,10,10
-Benchmark 60,60,349,11.6,21,0.197,9,7,9
-Benchmark 100,100,554,11.1,21,0.112,8,7,8
-Benchmark 140,140,866,12.4,23,0.089,9,7,9
+instancia,turmas,arestas,grau_medio,grau_maximo,densidade,maior_grupo,maior_professor,omega,limite_inferior,indice,semente
+Exemplo ilustrativo,120,683,11.4,25,0.096,10,10,10,10,0,42
+Benchmark,60,349,11.6,21,0.197,9,7,9,9,0,102
+Benchmark,60,321,10.7,21,0.181,8,6,8,8,1,1102
+Benchmark,60,327,10.9,23,0.185,11,7,11,11,2,2102
+Benchmark,60,317,10.6,19,0.179,8,6,8,8,3,3102
+Benchmark,60,329,11.0,21,0.186,9,8,9,9,4,4102
+Benchmark,100,554,11.1,21,0.112,8,7,8,8,0,142
+Benchmark,100,603,12.1,22,0.122,11,6,11,11,1,1142
+Benchmark,100,538,10.8,23,0.109,9,7,9,9,2,2142
+Benchmark,100,547,10.9,21,0.111,12,6,12,12,3,3142
+Benchmark,100,604,12.1,21,0.122,8,7,8,8,4,4142
+Benchmark,140,866,12.4,23,0.089,9,7,9,9,0,182
+Benchmark,140,780,11.1,22,0.08,9,7,9,9,1,1182
+Benchmark,140,860,12.3,23,0.088,8,8,8,8,2,2182
+Benchmark,140,829,11.8,24,0.085,10,8,10,10,3,3182
+Benchmark,140,709,10.1,21,0.073,8,7,8,8,4,4182
