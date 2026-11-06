@@ -1,3 +1,3 @@
 algoritmo,conflitos,horarios,tempo_s,tempo_min_s,tempo_max_s,semente,iteracao_primeira_viavel,tempo_ate_viavel_s,iteracao_melhor_final,tempo_ate_melhor_s,ls_inicial_movimentos,ls_inicial_conflitos,ls_max_movimentos,ls_chamadas_no_teto,ls_chamadas,aceites,aceites_mesmo_c_menos_k,razao_vns_guloso
-Guloso,0,10,0.0002396531499834964,0.00022836652999103535,0.0002793134649982676,,,,,,,,,,,,,7605.01953396191
-VNS,0,10,1.8225668869999936,,,42.0,0.0,0.7582933310040971,0.0,0.7582933310040971,82.0,0.0,82.0,0.0,46.0,0.0,0.0,7605.01953396191
+Guloso,0,10,0.0002484551350005404,0.00022370735499976035,0.0002657376599995587,,,,,,,,,,,,,6542.4925268554925
+VNS,0,10,1.625515863999908,,,42.0,0.0,0.6436198090000289,0.0,0.6436198090000289,82.0,0.0,82.0,0.0,46.0,0.0,0.0,6542.4925268554925
