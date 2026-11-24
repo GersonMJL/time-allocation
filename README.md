@@ -11,6 +11,7 @@ Todo o experimento está em um único arquivo, [`comparacao_alocacao_horarios.ip
 ```
 .
 ├── comparacao_alocacao_horarios.ipynb   # geração das instâncias, algoritmos, experimentos e figuras
+├── redesenhar_figuras_tempo.py          # redesenha as figuras de tempo a partir dos resumos (.csv)
 ├── requirements.txt                     # versões exatas usadas no TCC
 └── resultados/                          # tabelas (.csv), figuras (.png) e ambiente.json
 ```
@@ -75,14 +76,25 @@ Os arquivos são gravados em `resultados/` e sobrescrevem os existentes:
 | `construtivos.csv` | Guloso e DSATUR por instância: horários, ω(G), tempo | Tabelas 2 e 3 |
 | `rodadas_vns.csv` | Cada rodada da VNS (K e K + 1) | Tabelas 3 a 5 |
 | `resumo_benchmark.csv` | Agregados por tamanho e orçamento de cores | Tabelas 3 e 5, Figuras 1 e 2 |
-| `figura_benchmark_tempos.png` | Tempos no benchmark (escala log.) | Figura 1 |
+| `figura_benchmark_tempos.png` | Tempo da VNS em relação ao guloso no benchmark (escala linear) | Figura 1 |
 | `figura_benchmark_viabilidade.png` | Taxa de viabilidade da VNS no benchmark | Figura 2 |
 | `candidatas_densa.csv` | Todas as candidatas examinadas na família densa | Seção 5 |
 | `instancias_densa.csv` | Características das instâncias densas selecionadas | Tabela da família densa |
 | `construtivos_densa.csv`, `rodadas_vns_densa.csv`, `resumo_densa.csv` | O mesmo que no benchmark, com K e K − 1 | Seção 5 |
-| `figura_densa_tempos.png` | Tempos na família densa (escala log.) | Figura 3 |
+| `figura_densa_tempos.png` | Tempo da VNS em relação ao guloso na família densa (escala linear) | Figura 3 |
 | `figura_densa_viabilidade.png` | Taxa de viabilidade da VNS na família densa | Figura 4 |
 | `ambiente.json` | Commit, versões das bibliotecas e hardware | Seção 4.4 |
+
+### Redesenhar só as figuras de tempo
+
+`redesenhar_figuras_tempo.py` lê `resumo_benchmark.csv` e `resumo_densa.csv` e grava `figura_benchmark_tempos.png` e `figura_densa_tempos.png` com o mesmo código de desenho do notebook, sem Jupyter e sem rodar os algoritmos (leva poucos segundos):
+
+```bash
+python redesenhar_figuras_tempo.py                       # lê e grava em resultados/
+python redesenhar_figuras_tempo.py --pasta X --saida Y   # lê de X e grava em Y (padrão: a mesma pasta)
+```
+
+Se mudar o desenho no notebook (`_painel_tempos`), replique a mudança no script.
 
 `guloso_tempos.csv` e `teste_folga_cores.csv` são de uma versão anterior do experimento e não são mais gerados pelo notebook.
 
